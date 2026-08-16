@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudMuse Apps</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .games {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 25px;
+        }
+
+        .game-card {
+            background: #1e1e1e;
+            border-radius: 18px;
+            padding: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-card img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .game-card h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .game-card span {
+            color: #999;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CloudMuse Apps</h1>
+    <p>Mes jeux et applications Android</p>
+</header>
+
+<div class="games">
+
+    <a class="game-card" href="#">
+        <img src="https://placehold.co/512x512" alt="Jeu test">
+
+        <h2>Mon premier jeu</h2>
+
+        <span>Télécharger APK</span>
+    </a>
+
+</div>
+
+</body>
+</html>
